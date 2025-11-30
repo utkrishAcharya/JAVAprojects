@@ -9,15 +9,15 @@ public class Main {
         while (!exit) {
             System.out.println("^_^ WELCOME TO THE UTKRISH WORLD ^_^");
             System.out.println("____ Calculator Menu____");
-//            System.out.print("1 – Addition");
-//            System.out.printl("2 – Subtraction");
-//            System.out.println("3 – Multiplication");
-//            System.out.println("4 – Division");
-//            System.out.println("5 – Percentage");
-//            System.out.println("6 – Average");
-//            System.out.println("7 – Mean");
-//            System.out.println("8 – Median ");
-//            System.out.println("9 – Mode ");
+            System.out.print("1 – Addition");
+            System.out.println("2 – Subtraction");
+            System.out.println("3 – Multiplication");
+            System.out.println("4 – Division");
+            System.out.println("5 – Percentage");
+            System.out.println("6 – Average");
+            System.out.println("7 – Mean");
+            System.out.println("8 – Median ");
+            System.out.println("9 – Mode ");
             System.out.println("10 – Show History");
             System.out.println("11 – Turn Off Calculator");
 //            System.out.print("Enter What you want to Calculate (1-11): ");
@@ -39,26 +39,25 @@ public class Main {
                 }
 
                 double result = 0;
-                String operation = "";
-
-                switch (choice) {
-                    case 1:
+                String operation = switch (choice) {
+                    case 1 -> {
                         result = Addition.calculate(values);
-                        operation = "Addition";
-                        break;
-                    case 2:
+                        yield "Addition";
+                    }
+                    case 2 -> {
                         result = Subtraction.calculate(values);
-                        operation = "Subtraction";
-                        break;
-                    case 3:
+                        yield "Subtraction";
+                    }
+                    case 3 -> {
                         result = Multiplication.calculate(values);
-                        operation = "Multiplication";
-                        break;
-                    case 4:
+                        yield "Multiplication";
+                    }
+                    case 4 -> {
                         result = Division.calculate(values);
-                        operation = "Division";
-                        break;
-                }
+                        yield "Division";
+                    }
+                    default -> "";
+                };
 
                 System.out.println("Processing!!!!!!!!");
                 System.out.println("Result is : " + result);
