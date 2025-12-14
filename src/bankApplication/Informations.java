@@ -1,8 +1,8 @@
 package bankApplication;
 
-public class Informations {
-import java.util.*;
+import java.util.LinkedList;
 
+public class Informations {
 
         private String name;
         private String address;
@@ -93,4 +93,4 @@ import java.util.*;
             System.out.println("-------------------------------\n");
         }
     }
-}
+

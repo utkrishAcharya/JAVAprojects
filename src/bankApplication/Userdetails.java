@@ -22,16 +22,16 @@ public class Userdetails{
                 choice = sc.nextInt();
                 sc.nextLine();
             } catch (InputMismatchException e) {
-                System.out.println("❌ Invalid input! Please enter numbers only.");
+                System.out.println(" Invalid input! Please enter numbers only.");
                 sc.nextLine();
                 continue;
             }
 
             switch (choice) {
                 case 1:
-                    System.out.println("\t\t\t\t<<<<<<<<<<<<<  SIGN-UP PAGE  >>>>>>>>>>>\n");
+                    System.out.println("\t!^!!!!^!!!!!!!^!!  SIGN-UP PAGE !^!!!!!^!!!!!^!\n");
                     try {
-                        System.out.print("Enter Customer Name: ");
+                        System.out.print("Enter User Name: ");
                         String customerName = sc.nextLine();
                         if (customerName.trim().isEmpty())
                             throw new Exceptions("Name cannot be empty!");
@@ -67,7 +67,7 @@ public class Userdetails{
                                 case 1: customerAccountType = "SAVINGS ACCOUNT"; break;
                                 case 2: customerAccountType = "CURRENT ACCOUNT"; break;
                                 case 3: customerAccountType = "FIXED DEPOSIT ACCOUNT"; break;
-                                default: System.out.println("❌ Invalid choice! Please choose from 1 to 3.");
+                                default: System.out.println(" Invalid choice! Please choose from 1 to 3.");
                             }
                         } while (customerAccountType.isEmpty());
 
