@@ -10,7 +10,7 @@ public class Userdetails{
         List<Informations> customers = new LinkedList<>();
 
         while (true) {
-            System.out.println("\n\n########  WELCOME TO AMMAR'S BANK LIMITED  ########");
+            System.out.println("\n\n########  WELCOME TO UtkrishDADA BANK LIMITED  ########");
             System.out.println("\t\t\t\tLOGIN AND SIGN-UP PAGE");
             System.out.println("1. Sign-up");
             System.out.println("2. Login");
