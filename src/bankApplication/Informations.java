@@ -42,7 +42,7 @@ public class Informations {
 
         public void depositFunds(double amount) {
             if (amount <= 0) {
-                System.out.println("❌ Deposit amount must be greater than 0!");
+                System.out.println("Deposit amount must be greater than 0!");
                 return;
             }
             balance += amount;
