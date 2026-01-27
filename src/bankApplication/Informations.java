@@ -47,27 +47,27 @@ public class Informations {
             }
             balance += amount;
             statement.add("Deposited: " + amount);
-            System.out.println("✅ Deposit successful!");
+            System.out.println(" Deposit successful!");
             System.out.println("Current balance: NPR " + balance);
         }
 
         public void withdrawFunds(double amount) {
             if (amount <= 0) {
-                System.out.println("❌ Withdrawal amount must be greater than 0!");
+                System.out.println(" Withdrawal amount must be greater than 0!");
                 return;
             }
             if (amount > balance) {
-                System.out.println("❌ Insufficient balance!");
+                System.out.println(" Insufficient balance!");
             } else {
                 balance -= amount;
                 statement.add("Withdrawn: " + amount);
-                System.out.println("✅ Withdrawal successful!");
+                System.out.println(" Withdrawal successful!");
                 System.out.println("Current balance: NPR " + balance);
             }
         }
 
         public void checkCustomerBalance() {
-            System.out.println("💰 Current balance: NPR " + balance);
+            System.out.println(" Current balance: NPR " + balance);
         }
 
         public void showStatement() {
