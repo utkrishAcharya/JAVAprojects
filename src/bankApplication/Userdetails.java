@@ -118,7 +118,7 @@ public class Userdetails{
                         );
                         customers.add(customerAccount);
 
-                        System.out.println("\n✅ Account created successfully!");
+                        System.out.println("\nAccount created successfully!");
                         System.out.println("Account Number: " + accNumber);
                         System.out.println("Transaction PIN: " + pin);
 
@@ -181,14 +181,14 @@ public class Userdetails{
                                             System.out.println("Logging out...");
                                             break;
                                         default:
-                                            System.out.println("❌ Invalid choice!");
+                                            System.out.println(" Invalid choice!");
                                     }
                                 } while (op != 5);
                                 break;
                             }
                         }
                         if (!loggedIn) {
-                            System.out.println("❌ Invalid Account Number or PIN!");
+                            System.out.println(" Invalid Account Number or PIN!");
                         }
                     } catch (InputMismatchException e) {
                         System.out.println(" Invalid input type! Only numbers are allowed.");
