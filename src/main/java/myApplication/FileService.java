@@ -30,5 +30,4 @@ private static final Path filePath = Path.of("users.txt");
             Files.createFile(filePath);
         }
         return Files.readAllLines(filePath);
-    }
-}
+    }}
