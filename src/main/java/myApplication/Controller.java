@@ -68,6 +68,4 @@ public class Controller {
         } catch (AppException u) {
             // Return  the message
             return u.getMessage();
-        }
-    }
-}
+        } }}
