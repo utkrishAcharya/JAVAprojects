@@ -10,8 +10,7 @@ import java.util.List;
 
 @Service
 public class FileService {
-
-    private static final Path filePath = Path.of("users.txt");
+private static final Path filePath = Path.of("users.txt");
 
     public void saveUser(User user) throws IOException {
         // Create the file if it doesn't exist
